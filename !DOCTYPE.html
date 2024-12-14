@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Greeting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-box">
+            <h1>Nhập Tên</h1>
+            <input type="text" id="nameInput" placeholder="Nhập tên của bạn">
+            <button onclick="showGreeting()">Xem lời chúc</button>
+        </div>
+
+        <!-- Các phần tử lời chúc và ảnh -->
+        <div class="greeting hidden" id="greeting1">
+            <img src="https://via.placeholder.com/200x200.png?text=Cake+1" alt="Birthday Cake 1">
+            <p>Chúc bạn một ngày sinh nhật thật vui vẻ!</p>
+        </div>
+
+        <div class="greeting hidden" id="greeting2">
+            <img src="https://via.placeholder.com/200x200.png?text=Cake+2" alt="Birthday Cake 2">
+            <p>Chúc bạn luôn hạnh phúc và thành công!</p>
+        </div>
+
+        <div class="greeting hidden" id="greeting3">
+            <img src="https://via.placeholder.com/200x200.png?text=Cake+3" alt="Birthday Cake 3">
+            <p>Chúc bạn có một năm mới tràn đầy may mắn!</p>
+        </div>
+
+        <!-- Lời chúc cuối cùng -->
+        <div class="final-greeting hidden">
+            <p>Chúc mừng sinh nhật, <span id="finalName"></span>!</p>
+        </div>
+    </div>
+
+    <!-- Nhạc nền -->
+    <audio id="birthdayAudio" src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" autoplay loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
